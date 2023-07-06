@@ -1,0 +1,267 @@
+﻿@charset "utf-8";
+
+.k14-detail-info {
+	padding-top: 30px;
+  border-top: 1px solid #8c8c8c;
+  margin-top: 30px;
+}
+
+.info-group {
+	margin-bottom: 70px;
+}
+
+.info-group.staff-amout {
+	display: inline-block;
+}
+
+.info-group .group-title {
+	font-family: SSP-Bold;
+	font-size: 24px;
+	color: #fff50b;
+	margin-bottom: 20px;
+}
+
+.info-group p {
+	font-family: SSP-Regular;
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.info-group p b {
+	font-family: SSP-Bold;
+	font-size: 24px;
+	color: #fff50b;
+}
+
+.per-9x {
+	display: block;
+	float: left;
+	width: 55%;
+	margin-top: 15px;
+	font-family: SSP-Bold;
+	font-size: 24px;
+	color: #fff50b;
+	text-align: center;
+}
+
+.per-8x {
+	display: block;
+	float: right;
+	width: 45%;
+	margin-top: 15px;
+	font-family: SSP-Bold;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+}
+
+.time-chart-wrapper {
+	position: relative;
+	padding: 20px 0;
+	display: inline-block;
+	margin: 0 auto;
+	width: 630px;
+	background: url(/skin/time-chart-path.png) -15px 70px no-repeat;
+}
+
+.chart-image {
+	display: inline-block;
+	width: 255px;
+	height: 255px;
+	background: url(/skin/time-pie-chart.png) top left no-repeat;
+	margin-left: 160px;
+}
+
+.chart-description li {
+	font-family: SSP-Regular;
+	font-size: 24px;
+	color: #fff;
+	position: absolute;
+}
+
+.chart-description li.sleep {
+	top: 62px;
+	left: 15px;
+}
+
+.chart-description li.work-hard {
+	top: 40px;
+	right: 20px;
+}
+
+.chart-description li.working-hour {
+	bottom: 60px;
+	right: -40px;
+	color: #fff50b;
+}
+
+.chart-description li.play-hard {
+	bottom: 5px;
+}
+
+.list-k14-activities li {
+	width: 310px;
+	height: 86px;
+	float: left;
+	margin: 25px 100px 25px 0;
+}
+
+.list-k14-activities li:nth-child(2n) {
+	margin-right: 0;
+}
+
+.list-k14-activities li .icon {
+	display: block;
+	width: 86px;
+	height: 86px;
+	float: left;
+	margin-right: 15px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+}
+
+.list-k14-activities li .activity {
+	font-family: SSP-Regular;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+	display: block;
+	padding: 15px 0;
+}
+
+li.physical-games .activity {
+	padding-top: 5px;
+}
+
+li.facebook-surf .icon {
+	background: url(/skin/f-icon.png) #fff center center no-repeat;
+}
+
+li.physical-games .icon {
+	background: url(/skin/ball-icon.png) #fff center center no-repeat;
+}
+
+li.travel .icon {
+	background: url(/skin/travel-icon.png) #fff center center no-repeat;
+}
+
+li.play-game .icon {
+	background: url(/skin/controller-icon.png) #fff center center no-repeat;
+}
+
+.k14-viewpages .web-views, .k14-viewpages .mobile-views {
+	width: 300px;
+	float: left;
+}
+
+.k14-viewpages .web-views {
+	margin-right: 40px;
+}
+
+.k14-viewpages .web-views .icon {
+	display: block;
+	width: 110px;
+	height: 67px;
+	background: url(/skin/laptop-icon.png) top left no-repeat;
+	margin-right: 10px;
+	float: left;
+}
+
+.k14-viewpages .mobile-views .icon {
+	display: block;
+	width: 44px;
+	height: 74px;
+	background: url(/skin/mobile-icon.png) top left no-repeat;
+	margin-right: 10px;
+	float: left;
+	margin-top: -3px;
+}
+
+.k14-viewpages b {
+	font-family: SSP-Regular;
+	font-size: 65px;
+	color: #fff50b;
+	float: left;
+	margin-right: 5px;
+}
+
+.k14-viewpages i {
+	font-family: SSP-Regular;
+	font-size: 24px;
+	color: #fff50b;
+	display: block;
+	padding: 10px 0;
+}
+
+.the-voice-sticky {
+	position: fixed;
+	left: 0;
+	bottom: 280px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #ebebeb;
+	box-shadow: 0 9px 16px rgba(0,0,0,0.15);
+	border-top-left-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-bottom-left-radius: 4px;
+	text-align: center;
+	z-index: 10;
+}
+
+.btn-tv-back-to-top {
+	display: inline-block;
+	width: 30px;
+	height: 16px;
+	background: url(/skin/back-to-top.png) top left no-repeat;
+	padding-bottom: 12px;	
+}
+
+.the-voice-social {
+	padding: 15px 0;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+
+.btn-tv-show-comment {
+	display: inline-block;
+	width: 44px;
+	height: 38px;
+	background: url(/skin/grey-comment-bubble.png) top left no-repeat;
+	margin: 30px 0 0;
+	position: relative;
+	text-decoration: none;
+}
+
+.btn-tv-show-comment:before {
+  content: 'Hỏi đáp';
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #555;
+  font-weight: bold;
+}
+
+.btn-tv-show-comment span {
+	position: absolute;
+	display: block;
+	width: 36px;
+	height: 26px;
+	line-height: 24px;
+	left: 0;
+	top: 0;
+	font-size: 16px;
+	font-family: SSP-SemiBold;
+	color: #fff;
+	text-align: center;
+}
+
+

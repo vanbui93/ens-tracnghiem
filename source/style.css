@@ -1,0 +1,2051 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+textarea
+{
+    resize: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+    display: block;
+}
+body
+{
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+ol, ul
+{
+    list-style: none;
+}
+blockquote, q
+{
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+    content: '';
+    content: none;
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clearfix:after
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+a:hover
+{
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+.fl
+{
+    float: left;
+}
+
+.fr
+{
+    float: right;
+}
+
+.mr-0
+{
+    margin-right: 0 !important;
+}
+
+.mr-20
+{
+    margin-right: 20px;
+}
+
+.mr-30
+{
+    margin-right: 30px;
+}
+
+.mr-40
+{
+    margin-right: 40px;
+}
+
+.ml-0
+{
+    margin-left: 0 !important;
+}
+
+.ml-20
+{
+    margin-left: 20px;
+}
+
+.ml-30
+{
+    margin-left: 30px;
+}
+
+.ml-40
+{
+    margin-left: 40px;
+}
+
+.mt-0
+{
+    margin-top: 0 !important;
+}
+
+.mt-10
+{
+    margin-top: 10px;
+}
+
+.mt-20
+{
+    margin-top: 20px;
+}
+
+.mt-30
+{
+    margin-top: 30px;
+}
+
+.mt-40
+{
+    margin-top: 40px;
+}
+
+.mt-80
+{
+    margin-top: 80px;
+}
+.mt-100
+{
+    margin-top: 120px;
+}
+.mb-0
+{
+    margin-bottom: 0 !important;
+}
+
+.mb-10
+{
+    margin-bottom: 10px;
+}
+
+.mb-20
+{
+    margin-bottom: 20px;
+}
+
+.mb-30
+{
+    margin-bottom: 30px;
+}
+
+.mb-40
+{
+    margin-bottom: 40px;
+}
+
+.mb-80
+{
+    margin-bottom: 80px;
+}
+
+.pt-10
+{
+    padding-top: 10px;
+}
+.pt-20
+{
+    padding-top: 20px;
+}
+.pt-30
+{
+    padding-top: 30px;
+}
+.pt-60
+{
+    padding-top: 60px;
+}
+@font-face
+{
+    font-family: SSP-Regular;
+    src: url(SSP-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: SSP-Light;
+    src: url(SSP-Light.ttf);
+}
+
+@font-face
+{
+    font-family: SSP-ExtraLight;
+    src: url(SSP-ExtraLight.ttf);
+}
+
+@font-face
+{
+    font-family: SSP-SemiBold;
+    src: url(SSP-SemiBold.ttf);
+}
+
+@font-face
+{
+    font-family: SSP-Bold;
+    src: url(SSP-SemiBold.ttf);
+}
+
+@font-face
+{
+    font-family: SSP-Italic;
+    src: url(SSP-Italic.ttf);
+}
+
+@font-face
+{
+    font-family: SSP-BoldItalic;
+    src: url(SSP-BoldItalic.ttf);
+}
+
+@font-face
+{
+    font-family: SSP-SemiBoldItalic;
+    src: url(SSP-SemiBoldItalic.ttf);
+}
+
+
+/* ----------------- TUYEN DUNG 2015----------------- */
+
+.w940
+{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.body-wrapper
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.btn-back-to-k14
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 150px;
+    height: 46px;
+    font-family: SSP-SemiBold;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom-right-radius: 6px;
+    background: #e27a00;
+    text-align: center;
+    line-height: 45px;
+    z-index: 2;
+}
+
+.btn-back-to-k14:hover
+{
+    background: #d53a17;
+}
+
+.header
+{
+    background: #fab001;
+}
+
+.header .main-logo-banner
+{
+    position: relative;
+    background: url(header-logo.png) bottom center no-repeat;
+    height: 290px;
+}
+
+.header .main-logo-banner:before
+{
+    display: block;
+    width: 141px;
+    height: 210px;
+    background: url(header-lightning.jpg) top left no-repeat;
+    position: absolute;
+    bottom: 25px;
+    left: -110px;
+    content: '';
+}
+
+.header .main-logo-banner:after
+{
+    display: block;
+    width: 166px;
+    height: 229px;
+    background: url(header-pin-paper.png) top left no-repeat;
+    position: absolute;
+    bottom: 55px;
+    right: -82px;
+    content: '';
+}
+
+.main-menu-container
+{
+    height: 80px;
+    background: #222;
+    margin-top: -20px;
+}
+
+.list-main-menu
+{
+    text-align: center;
+}
+
+.list-main-menu li
+{
+    display: inline-block;
+}
+
+.list-main-menu li a
+{
+    font-family: SSP-SemiBold;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 96px;
+    display: block;
+    padding: 0 20px;
+}
+
+.list-main-menu li a:hover
+{
+    background: #000;
+}
+
+body
+{
+    background: #E9EAED;
+}
+
+.top-k14-overview .text-overview
+{
+    padding: 30px 0 20px 200px;
+    background: url(k14-white-logo.png) 40px 40px no-repeat;
+    background-size: 96px;
+}
+
+.text-overview h1
+{
+    font-family: SSP-Bold;
+    font-size: 32px;
+    color: #fff50b;
+    margin-bottom: 12px;
+}
+
+.text-overview p
+{
+    font-family: SSP-Regular;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 24px;
+    width: 90%;
+}
+
+.text-overview p b
+{
+    font-family: SSP-Bold;
+    font-size: 20px;
+    color: #fff50b;
+}
+
+.text-overview img
+{
+    margin: 20px 0;
+}
+
+.info-overview
+{
+    border-top: 1px solid #fff;
+}
+
+.info-overview .col-left
+{
+    padding: 20px;
+    padding-left: 0;
+    border-right: 1px solid #fff;
+    width: 640px;
+}
+
+.info-overview .col-left h2
+{
+    font-family: SSP-Regular;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info-overview .col-left h2 b
+{
+    font-size: 24px;
+    color: #fff50b;
+}
+
+.list-overview-icon li
+{
+    float: left;
+    width: 160px;
+    text-align: center;
+    font-family: SSP-SemiBold;
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.list-overview-icon li .overview-icon
+{
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    margin-bottom: 12px;
+    background: #fff50b;
+    border-radius: 4px;
+}
+
+.list-overview-icon li .overview-icon.rocket
+{
+    background: url(s1-rocket-icon.png) #fff50b center center no-repeat;
+}
+
+.list-overview-icon li .overview-icon.film
+{
+    background: url(s1-film-icon.png) #fff50b center center no-repeat;
+}
+
+.list-overview-icon li .overview-icon.satelite
+{
+    background: url(s1-satelite-icon.png) #fff50b 30px 16px no-repeat;
+}
+
+.list-overview-icon li .overview-icon.camera
+{
+    background: url(s1-camera-icon.png) #fff50b center center no-repeat;
+}
+
+.info-overview .col-right
+{
+    padding: 20px 0;
+    padding-right: 0;
+    width: 275px;
+    font-family: SSP-Regular;
+}
+
+.info-overview .col-right .daily-clock
+{
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 20px;
+    padding-bottom: 140px;
+    background: url(s1-clock-icon.png) center 60px no-repeat;
+    border-right: 1px solid #fff;
+}
+
+.info-overview .col-right .daily-visit span
+{
+    font-size: 65px;
+    color: #fff50b;
+}
+
+.info-overview .col-right .daily-visit i
+{
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff50b;
+}
+
+.info-overview .col-right .daily-visit p
+{
+    font-size: 13px;
+    color: #fff;
+}
+
+.recruitment-video-container
+{
+    margin: 50px auto 140px;
+    text-align: center;
+    position: relative;
+}
+
+.recruitment-video-container:before
+{
+    content: '';
+    width: 1064px;
+    height: 132px;
+    background: url(video-shelves.jpg) top left no-repeat;
+    display: block;
+    position: absolute;
+    bottom: -125px;
+    left: -50px;
+}
+
+.video-frame-container img, .video-frame-container iframe
+{
+    z-index: 1;
+    position: relative;
+    border: 15px solid #222;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.container-description
+{
+    font-family: SSP-Regular;
+    font-size: 28px;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.quick-test-container .container-description
+{
+    padding-top: 100px;
+    background: url(quizz-pin.png) top center no-repeat;
+}
+
+.nominee-portrait
+{
+    margin: 30px auto 80px;
+    background: url(s3-nominee-path.png) center center no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+.nominee-portrait .portrait-ava
+{
+    display: inline-block;
+    width: 190px;
+    height: 190px;
+    background: url(s3-nominee-ava.png) center center no-repeat;
+    background-size: 194px;
+    border: 10px solid #d53a17;
+    border-radius: 100%;
+    margin: 60px 30px 100px 0;
+}
+
+.nominee-portrait .list-qualities li
+{
+    position: absolute;
+    height: 45px;
+    background: #d53a17;
+    font-family: SSP-Bold;
+    font-size: 20px;
+    color: #fff;
+    line-height: 43px;
+    border-radius: 4px;
+}
+
+.nominee-portrait .list-qualities li.pencil
+{
+    padding-left: 15px;
+    padding-right: 55px;
+    background: url(s3-pencil-icon.png) #d53a17 top right no-repeat;
+    top: 86px;
+}
+
+.nominee-portrait .list-qualities li.heart
+{
+    padding-left: 15px;
+    padding-right: 60px;
+    background: url(s3-heart-icon.png) #d53a17 top right no-repeat;
+    top: 300px;
+    left: 100px;
+}
+
+.nominee-portrait .list-qualities li.flag
+{
+    padding-right: 15px;
+    padding-left: 60px;
+    background: url(s3-flag-icon.png) #d53a17 bottom left no-repeat;
+    top: 28px;
+    right: 105px;
+}
+
+.nominee-portrait .list-qualities li.light
+{
+    padding-right: 15px;
+    padding-left: 65px;
+    background: url(s3-light-icon.png) #d53a17 bottom left no-repeat;
+    top: 158px;
+    right: 30px;
+}
+
+.nominee-portrait .list-qualities li.star
+{
+    height: 55px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 65px;
+    background: url(s3-star-icon.png) #d53a17 bottom left no-repeat;
+    top: 278px;
+    right: 45px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.quick-test-form
+{
+    margin: 30px auto 0px;
+    position: relative;
+}
+
+.quick-test-form .form-header
+{
+    height: 50px;
+    padding-left: 20px;
+    font-family: SSP-Bold;
+    font-size: 24px;
+    line-height: 48px;
+    color: #fff;
+    background: #4C67A1;
+}
+
+.quick-test-form .bx-viewport
+{
+    height: auto !important;
+}
+
+.quick-test-form .list-form-question
+{
+    background: #fff;
+}
+
+.quick-test-form .list-form-question .form-question
+{
+    padding: 20px;
+    background: #fff;
+    width: 900px !important;
+    font-family: SSP-Regular;
+}
+
+.quick-test-form .list-form-question .form-question p
+{
+    font-size: 24px;
+    line-height: 30px;
+    color: #222;
+}
+
+.quick-test-form .list-form-question .form-question p b
+{
+    font-family: SSP-Bold;
+    color: #d53a17;
+}
+
+.quick-test-form .list-form-question .form-question .list-answer
+{
+    margin-top: 20px;
+}
+
+.quick-test-form .list-form-question .form-question .list-answer .answer
+{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.quick-test-form .list-form-question .form-question .list-answer .answer input[type="radio"]
+{
+    display: none;
+}
+
+.quick-test-form .list-form-question .form-question .list-answer .answer label
+{
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222;
+    padding-left: 45px;
+    cursor: pointer;
+}
+
+.quick-test-form .list-form-question .form-question .list-answer .answer label:before
+{
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #e5e5e5;
+    content: '';
+    background: #fff;
+}
+
+.quick-test-form .list-form-question .form-question .list-answer .answer input[type="radio"]:checked + label:before
+{
+    background: #d53a17;
+    border: 1px solid #d53a17;
+    background: url(form-tick-icon.png) #d53a17 center center no-repeat;
+}
+
+.quick-test-form .list-form-question .form-question.result
+{
+    text-align: center;
+}
+
+.quick-test-form .list-form-question .form-question.result span
+{
+    font-family: SSP-Regular;
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0 15px;
+    display: block;
+    line-height: 24px;
+}
+
+.quick-test-form .list-form-question .form-question.result h2
+{
+    font-size: 30px;
+    color: #dd3f09;
+}
+
+.quick-test-form .list-form-question .form-question.result h3
+{
+    font-family: SSP-Bold;
+    font-size: 22px;
+    color: #555;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.quick-test-form .bx-pager
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    font-family: SSP-Bold;
+    font-size: 20px;
+    line-height: 48px;
+}
+
+.quick-test-form .bx-controls-direction
+{
+    text-align: center;
+    background: #222;
+    height: 50px;
+}
+
+.quick-test-form .bx-controls-direction a
+{
+    display: inline-block;
+    width: 50%;
+    font-family: SSP-Bold;
+    font-size: 20px;
+    line-height: 48px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.quick-test-form .bx-controls-direction a.disabled
+{
+    opacity: 0.2;
+}
+
+
+.category-recruitment-info-container
+{
+    color: #fff;
+    padding: 50px 0;
+}
+
+.category-recruitment-info-container .category-name
+{
+    font-family: SSP-ExtraLight;
+    font-size: 60px;
+    margin-bottom: 65px;
+    position: relative;
+}
+
+.category-recruitment-info-container .recruitment-item .position
+{
+    display: table;
+    height: 40px;
+    padding: 0 15px;
+    font-family: SSP-SemiBold;
+    font-size: 24px;
+    color: #fff;
+    background: #222;
+    text-transform: uppercase;
+    line-height: 38px;
+}
+
+.category-recruitment-info-container .recruitment-item .position > a
+{
+    height: 40px;
+    font-family: SSP-SemiBold;
+    font-size: 24px;
+    color: #fff;
+    background: #222;
+    text-transform: uppercase;
+    line-height: 38px;
+    text-decoration: none;
+    margin: 0px;
+}
+.category-recruitment-info-container .recruitment-item .position > a:hover
+{
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.category-recruitment-info-container .recruitment-item p
+{
+    display: table;
+    height: 40px;
+    padding: 0 15px;
+    background: #e5e5e5;
+    color: #333;
+    font-family: SSP-Bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 38px;
+}
+
+.category-recruitment-info-container .recruitment-item .work-list
+{
+    margin-top: 30px;
+}
+
+.recruitment-item
+{
+    width: 45%;
+}
+
+.recruitment-item .work-list li
+{
+    padding-left: 25px;
+    font-family: SSP-Regular;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    background: url(checklist-icon.png) left 5px no-repeat;
+    margin-bottom: 15px;
+}
+
+.category-recruitment-info-container .btn-sign-in
+{
+    display: none;
+    width: 214px;
+    height: 42px;
+    border: 2px solid #fff;
+    font-family: SSP-SemiBold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    margin: 50px auto;
+}
+
+.category-recruitment-info-container.entertainment .btn-sign-in:hover
+{
+    background: #fff;
+    color: #de3937;
+}
+
+.category-recruitment-info-container.socially .btn-sign-in:hover
+{
+    background: #fff;
+    color: #253370;
+}
+
+.category-recruitment-info-container.life .btn-sign-in:hover
+{
+    background: #fff;
+    color: #58ad34;
+}
+
+.category-recruitment-info-container.photography .btn-sign-in:hover
+{
+    background: #fff;
+    color: #41357d;
+}
+
+.category-recruitment-info-container.sport .btn-sign-in:hover
+{
+    background: #fff;
+    color: #2e68b1;
+}
+
+.category-recruitment-info-container.marketing.afamily .btn-sign-in:hover
+{
+    background: #fff;
+    color: #e92d4c;
+}
+
+.category-recruitment-info-container .quote.type1
+{
+    display: table;
+    text-align: center;
+    font-family: SSP-Light;
+    font-size: 34px;
+    line-height: 40px;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    display: none;
+}
+
+.category-recruitment-info-container .quote:before
+{
+    display: block;
+    width: 22px;
+    height: 19px;
+    background: url(quote-sprite.png) top left no-repeat;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    content: '';
+}
+
+.category-recruitment-info-container .quote:after
+{
+    display: block;
+    width: 22px;
+    height: 19px;
+    background: url(quote-sprite.png) top right no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: -30px;
+    content: '';
+}
+
+.category-recruitment-info-container.entertainment .quote.type1:after
+{
+    right: 165px;
+}
+
+.category-recruitment-info-container.entertainment
+{
+    background: url(cat-giaitri-bg.jpg) #de3937 bottom center no-repeat;
+    padding-bottom: 450px;
+}
+
+.category-recruitment-info-container.socially
+{
+    background: #253370;
+}
+
+.category-recruitment-info-container.seniormanager
+{
+    background: #ff631c;
+}
+
+
+
+.category-recruitment-info-container.socially .quote.type1:before
+{
+    left: -18px;
+}
+
+.category-recruitment-info-container .recruitment-content
+{
+    position: relative;
+    z-index: 1;
+}
+
+.category-recruitment-info-container.socially .recruitment-content:before
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 315px;
+    width: 824px;
+    height: 740px;
+    background: url(cat-xahoi-bg.jpg) top left no-repeat;
+    content: '';
+    z-index: -1;
+}
+
+.category-recruitment-info-container.sport:before
+{
+    display: block;
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    width: 100%;
+    height: 284px;
+    background: url(cat-sport-bg.png) top center no-repeat;
+    content: '';
+    z-index: 0;
+}
+
+.category-recruitment-info-container.seniormanager .recruitment-content:before {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 510px;
+    width: 500px;
+    height: 385px;
+    /*background: url(marketing_digital_01.png) top left no-repeat;*/
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    content: '';
+    z-index: -1;
+}
+
+.category-recruitment-info-container .col-left, .category-recruitment-info-container .col-right
+{
+    width: 45%;
+}
+
+.category-recruitment-info-container.life .recruitment-item, .category-recruitment-info-container.photography .recruitment-item, .category-recruitment-info-container.sport .recruitment-item, .category-recruitment-info-container.marketing.afamily .recruitment-item
+{
+    width: 100%;
+}
+
+.category-recruitment-info-container .quote.type2
+{
+    display: table;
+    text-align: left;
+    font-family: SSP-Light;
+    font-size: 30px;
+    line-height: 40px;
+    position: relative;
+    display: none;
+}
+
+.category-recruitment-info-container.marketing .quote.type2
+{
+    text-align: center;
+    font-size: 36px;
+}
+
+.category-recruitment-info-container.marketing .quote:after
+{
+    right: 110px;
+}
+
+.category-recruitment-info-container.marketing .recruitment-content:before
+{
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 445px;
+    width: 567px;
+    height: 404px;
+    background: url(cat-marketing-bg.jpg) top left no-repeat;
+    content: '';
+    z-index: -1;
+}
+
+.category-recruitment-info-container.life .quote
+{
+    margin-top: 80px;
+}
+
+.category-recruitment-info-container.life .quote:after
+{
+    right: 35px;
+}
+
+.category-recruitment-info-container.life
+{
+    background: url(cat-doisong-bg.jpg) #58ad34 bottom center no-repeat;
+  
+}
+
+.category-recruitment-info-container.photography .quote
+{
+    margin-top: 60px;
+}
+
+
+.category-recruitment-info-container.photography
+{
+    background: url(cat-nhiepanh-bg.jpg) #41357d bottom center no-repeat;
+    
+}
+
+.category-recruitment-info-container.photography .quote:after
+{
+    right: 145px;
+}
+
+/*.category-recruitment-info-container.sport, .category-recruitment-info-container.marketing.afamily {
+	width: 50%;
+}
+
+.category-recruitment-info-container.sport .recruitment-content, .category-recruitment-info-container.marketing.afamily .recruitment-content {
+	width: 470px;
+}*/
+
+.category-recruitment-info-container.marketing.afamily .recruitment-content
+{
+    padding-left: 30px;
+}
+
+.category-recruitment-info-container .site-des
+{
+    display: block;
+    margin-top: 20px;
+    font-family: SSP-Regular;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.category-recruitment-info-container.sport
+{
+    background: #2e68b1;
+    position: relative;
+   
+}
+
+.category-recruitment-info-container.marketing.afamily
+{
+    background: #ec1f62;
+}
+
+
+/*.category-recruitment-info-container.sport .quote, .category-recruitment-info-container.marketing.afamily .quote {
+	font-size: 36px;
+	margin-left: 30px;
+}*/
+
+.category-recruitment-info-container.sport .quote:after
+{
+    right: 5px;
+}
+
+.nominee-rights-container
+{
+    padding-bottom: 20px; /*background: url(qa-bg.png) center center #171717 no-repeat;*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nominee-rights-container h2, .aboutus-container h2
+{
+    text-align: center;
+    font-family: SSP-ExtraLight;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.nominee-rights-content
+{
+    text-align: center;
+}
+
+.nominee-rights-content p
+{
+    font-family: SSP-SemiBold;
+    font-size: 24px;
+    color: #fff50b;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.nominee-rights-content .list-nominee-rights
+{
+    display: inline-block;
+}
+
+.nominee-rights-content .list-nominee-rights li
+{
+    padding-left: 25px;
+    font-family: SSP-Regular;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    background: url(checklist-icon.png) left 5px no-repeat;
+    margin-bottom: 15px;
+    text-align: left;
+    float: left;
+    width: 35%;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.nominee-rights-content .list-nominee-rights li:nth-child(2)
+{
+    margin-right: 0;
+}
+
+.nominee-rights-content .list-nominee-rights
+{
+    padding-left: 150px;
+}
+
+.qa-contact .list-qa-question .q
+{
+    margin-bottom: 40px;
+    padding: 0 80px;
+    font-family: SSP-Regular;
+    font-size: 20px;
+    color: #fff50b;
+}
+
+.qa-contact .list-qa-question .q .number
+{
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #fff50b;
+    text-align: center;
+    line-height: 26px;
+    font-size: 22px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 15px;
+}
+
+.qa-contact .list-qa-question li.q .q-content
+{
+    line-height: 28px;
+    position: relative;
+    padding-right: 25px;
+    display: table;
+    cursor: pointer;
+}
+
+.qa-contact .list-qa-question .q .q-content:after
+{
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #fff50b;
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.qa-contact .list-qa-question .q.active .q-content:after
+{
+    border-bottom: 10px solid #fff50b;
+    border-top: none;
+}
+
+.qa-contact .list-qa-question .q .a p
+{
+    font-family: SSP-Light;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 45px;
+    margin-top: 15px;
+    line-height: 26px;
+}
+
+.qa-contact .list-qa-question .q .a p b
+{
+    font-family: SSP-Regular;
+}
+
+.qa-contact .list-qa-question .q .a p a, .qa-contact .list-qa-question .q .a p span
+{
+    color: #fff50b;
+    text-decoration: none;
+}
+
+.footer
+{
+    height: 70px;
+    background: #FFA200;
+    font-family: SSP-Regular;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 68px;
+}
+
+
+
+
+
+/* -------------------------- TUYỂN DỤNG ------------------------- */
+
+.register-lightbox-container
+{
+    width: 680px;
+    height: 450px;
+}
+
+.lightbox-header
+{
+    height: 42px;
+    background: #f6f6f6;
+}
+
+.lightbox-header .vietid-logo
+{
+    background: url(vietid-logo.png) no-repeat left top;
+    margin-left: 10px;
+    display: block;
+    height: 40px;
+    background-size: 140px;
+    width: 180px;
+    margin-top: 11px;
+}
+
+.lightbox-header .login-links li
+{
+    display: inline-block;
+    height: 42px;
+    font-size: 12px;
+    color: #3b7cbd;
+    font-weight: bold;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.lightbox-header .login-links li a
+{
+    color: #3b7cbd;
+    text-decoration: none;
+}
+
+.lightbox-content
+{
+    padding: 30px;
+}
+
+.lightbox-content p
+{
+    font-family: SSP-SemiBold;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.lightbox-content.entertainment p b
+{
+    font-family: SSP-Bold;
+    color: #de3937;
+}
+
+.lightbox-content.entertainment .list-form-element li
+{
+    display: table;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.lightbox-content.entertainment .list-form-element li input[type="text"]
+{
+    height: 28px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+    outline: none;
+}
+
+.lightbox-content.entertainment .list-form-element li.select-position select
+{
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 0 6px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.lightbox-content.entertainment .list-form-element li.nominee-fullname, .lightbox-content.entertainment .list-form-element li.nominee-att
+{
+    width: 96%;
+}
+
+.lightbox-content.entertainment .list-form-element li.nominee-email, .lightbox-content.entertainment .list-form-element li.nominee-phone
+{
+    float: left;
+    width: 35%;
+    margin-right: 6%;
+}
+
+.lightbox-content.entertainment .list-form-element li.nominee-fullname input[type="text"]
+{
+    width: 96%;
+}
+
+.lightbox-content.entertainment .list-form-element li.nominee-att input[type="text"]
+{
+    float: left;
+    width: 79%;
+}
+
+.lightbox-content.entertainment .list-form-element li.nominee-att .btn-select-file
+{
+    display: block;
+    float: left;
+    width: 15%;
+    margin-left: 2%;
+    font-family: SSP-SemiBold;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    line-height: 28px;
+    text-decoration: none;
+    background: #ccc;
+    height: 30px;
+}
+
+.lightbox-content h1
+{
+    font-family: SSP-Light;
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.lightbox-content h1 a
+{
+    font-family: SSP-Bold;
+    color: #d53a17;
+    text-decoration: none;
+}
+
+.lightbox-content .btn-register
+{
+    font-family: SSP-Bold;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    height: 50px;
+    line-height: 48px;
+    padding: 0 20px;
+    background: #d53a17;
+    text-transform: uppercase;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*------------------------------------*/
+
+.main-menu-sticky
+{
+    height: 50px;
+    background: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.main-menu-sticky .list-main-menu
+{
+    text-align: center;
+    height: 100%;
+}
+
+.main-menu-sticky .list-main-menu li
+{
+    display: inline-block;
+    height: 100%;
+}
+
+.main-menu-sticky .list-main-menu li a
+{
+    font-family: SSP-SemiBold;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 48px;
+    display: block;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.main-menu-sticky .list-main-menu li a:hover
+{
+    background: #000;
+}
+
+.main-menu-sticky .list-main-menu li.seniormanager.active a, .main-menu-sticky .list-main-menu li.seniormanager a:hover
+{
+    background: #ff631c;
+}
+
+.main-menu-sticky .list-main-menu li.entertainment.active a, .main-menu-sticky .list-main-menu li.entertainment a:hover
+{
+    background: rgba(222,57,55,1);
+}
+
+.main-menu-sticky .list-main-menu li.socially.active a, .main-menu-sticky .list-main-menu li.socially a:hover
+{
+    background: rgba(37,51,112,1);
+}
+
+.main-menu-sticky .list-main-menu li.life.active a, .main-menu-sticky .list-main-menu li.life a:hover
+{
+    background: rgba(88,173,52,1);
+}
+
+.main-menu-sticky .list-main-menu li.photography.active a, .main-menu-sticky .list-main-menu li.photography a:hover
+{
+    background: rgba(65,53,125,1);
+}
+
+.main-menu-sticky .list-main-menu li.sport.active a, .main-menu-sticky .list-main-menu li.sport a:hover
+{
+    background: rgba(46,104,177,1);
+}
+
+.main-menu-sticky .list-main-menu li.marketing.active a, .main-menu-sticky .list-main-menu li.marketing a:hover
+{
+    background: #ec1f62;
+}
+
+.main-menu-sticky .list-main-menu li.aboutus.active a, .main-menu-sticky .list-main-menu li.aboutus a:hover
+{
+    background: #333;
+}
+
+
+/* ----------------------------------- */
+
+.top-quote-container h2
+{
+    position: relative;
+}
+
+.top-quote-container h2:before
+{
+    display: block;
+    width: 22px;
+    height: 19px;
+    background: url(red-quote-sprite.png) top left no-repeat;
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    content: '';
+}
+
+.top-quote-container h2:after
+{
+    display: block;
+    width: 22px;
+    height: 19px;
+    background: url(red-quote-sprite.png) top right no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: -25px;
+    content: '';
+}
+
+.category-recruitment-info-container .recruitment-item .btn-popup-detail
+{
+    display: inline-block;
+    height: 25px;
+    font-family: SSP-SemiBold;
+    font-size: 14px;
+    color: #fff50b;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 32px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.category-recruitment-info-container .recruitment-item .btn-popup-detail:hover
+{
+    opacity: 1;
+    border-bottom: 1px #fff50b solid;
+}
+
+.recruitment-info-popup-container
+{
+    width: 620px;
+    padding: 30px;
+    height: 540px;
+    background: #fff;
+}
+
+.recruitment-info-popup-container .recruitment-item
+{
+    width: 100%;
+}
+
+.recruitment-info-popup-container .recruitment-item .position
+{
+    display: table;
+    height: 40px;
+    padding: 0 15px;
+    font-family: SSP-SemiBold;
+    font-size: 24px;
+    color: #fff;
+    background: #222;
+    text-transform: uppercase;
+    line-height: 38px;
+}
+
+.recruitment-info-popup-container .recruitment-item p
+{
+    display: table;
+    height: 40px;
+    padding: 0 15px;
+    background: #e5e5e5;
+    color: #333;
+    font-family: SSP-Bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 38px;
+}
+
+.recruitment-info-popup-container .recruitment-item h2
+{
+    color: #d53a17;
+    font-family: SSP-Bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 20px 0 15px;
+}
+
+.recruitment-info-popup-container .recruitment-item .work-list li
+{
+    color: #333;
+    background: none;
+    position: relative;
+    padding-left: 18px;
+}
+
+.recruitment-info-popup-container .recruitment-item .work-list li:before
+{
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #d73914;
+    border-radius: 100%;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+.recruitment-info-popup-container .btn-sign-in
+{
+    display: none;
+    width: 214px;
+    height: 42px;
+    font-family: SSP-SemiBold;
+    color: #fff;
+    background: #d43a16;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    margin: 50px auto;
+}
+
+.fancybox-skin
+{
+    background: #fff !important;
+}
+
+.aboutus-container
+{
+    /*background: #161616;*/
+    padding: 20px 0;
+}
+
+/* LOGIN IF */
+.login_ovelay
+{
+    /*background: url(../img/b50.png); 	position: fixed;*/
+    width: 100%;
+    height: 100%;
+    top: 0; /*left: 0;*/
+    display: block; /*z-index: 1000;*/
+}
+.login_form
+{
+    width: 472px; /*margin:150px auto;*/
+    margin: auto;
+    background: url(../img/b30.png);
+    padding: 6px;
+}
+.block_login
+{
+    border: 1px #000 solid;
+    background: #fff;
+    display: block;
+    position: relative;
+}
+.block_login .close
+{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+.block_login .bar
+{
+    padding: 6px 15px;
+    background: #eaeaea;
+    border-bottom: 1px #b0b0b0 solid;
+}
+.block_login .bar .logo
+{
+    background: #eaeaea url('vietid-logo-if.png') no-repeat scroll right top;
+    height: 33px;
+}
+.logo img
+{
+    max-height: 24px;
+    margin-top: 5px;
+}
+.block_login .noticle
+{
+    background: #fffce3;
+    padding: 10px 12px;
+    border-top: 1px #e1c823 solid;
+    border-bottom: 1px #e1c823 solid;
+    color: #444;
+    font-size: 12px;
+}
+.red
+{
+    color: #ff0000;
+}
+.blue
+{
+    color: #105cb6;
+}
+.block_login .noticle a
+{
+    color: #105cb6;
+}
+.block_login .form
+{
+    padding: 12px 15px;
+}
+.block_login .form .title-bar
+{
+    color: #333333;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+.block_login .form .login-icon
+{
+    background: transparent url('/img/icon-user.png') no-repeat scroll left 2px;
+    padding: 5px 0 3px 36px;
+}
+.block_login .form .lostpass-icon
+{
+    background: transparent url('/img/icon-lostpass.png') no-repeat scroll left 4px;
+    padding: 7px 0 2px 32px;
+}
+
+.block_login .form .title-bar span
+{
+    color: #999;
+}
+.block_login .form .login-box
+{
+    border: 1px #e2e2e2 solid;
+    background: #f5f5f5;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+.login-box.pd, .login-box-pd
+{
+    padding: 18px 12px;
+}
+.block_login .form .login-box > div.tr
+{
+    margin-bottom: 12px;
+    clear: both;
+}
+.block_login .form .login-box > div.auto
+{
+    padding: 0 12px;
+    clear: both;
+}
+.block_login .form .login-box > div.tr .terms
+{
+    font-size: 11px;
+    text-align: center;
+    display: block;
+}
+.block_login .form .login-box > div.tr .fb-mail
+{
+    background: transparent url('../img/fb-mini-icon.png') no-repeat scroll left top;
+    padding-left: 20px;
+    color: #105cb6;
+    font-size: 14px;
+    font-weight: bold;
+}
+.block_login .form .login-box > div.tr .terms a
+{
+    color: #578cca;
+}
+.block_login .form .login-box .guide
+{
+    color: #333;
+    font-family: Tahoma;
+}
+.block_login .form .login-box .guide p
+{
+    margin: 8px 0;
+}
+.guide .success
+{
+    color: #333;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.block_login .form .login-box label
+{
+    width: 138px;
+    float: left;
+    color: #444;
+    padding: 4px 0;
+    cursor: pointer;
+}
+.login
+{
+    border-left: 1px solid #2a2d32;
+    float: left;
+    padding: 0 10px;
+    height: 60px;
+    line-height: normal;
+    position: relative;
+}
+.login:hover
+{
+    background: #383c47;
+}
+.login a
+{
+    color: #fff;
+    font-family: Myriad Pro;
+    font-size: 14px;
+    padding-top: 20px;
+    float: left;
+}
+
+.loginbox
+{
+    position: fixed;
+    width: 472px;
+    height: 450px;
+    display: none;
+    z-index: 100;
+    border: none;
+    text-align: center;
+}
+.loginboxcontainer
+{
+    position: relative;
+    width: 520px;
+    height: 420px;
+}
+.loginbox iframe
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}
+.close_login
+{
+    background: url('fancy_close.png') no-repeat left top;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+}
+.overlay
+{
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 99;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+/* END LOGIN */
+
+.hidden
+{
+    display: none !important;
+}
+#social-wrapt
+{
+    text-align: center;
+}
+#social-wrapt .sharefb
+{
+    background: url('btn-share.png') no-repeat left top;
+    width: 251px;
+    height: 42px;
+    display: inline-block;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+.bottom-overview
+{
+    background: url(qa-bg.png) center center #171717 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bx-controls
+{
+    visibility: hidden;
+}
+.begin-slider-qa
+{
+    display: inline-block;
+    background: #d53a17;
+    height: 50px;
+    font-family: SSP-SemiBold;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 48px;
+    padding: 0 50px;
+    border-radius: 6px;
+    margin-top: 40px;
+}
+.begin-slider-qa:hover
+{
+    background: #333;
+}
+.icon-ticked
+{
+    background: url(check-copy-4.png) center center no-repeat;
+    height: 50px;
+}
+
+.firstLi
+{
+    font-family: SSP-Regular !important;
+    font-size: 30px !important;
+    line-height: 36px !important;
+    margin-top: 25px !important;
+    width: 80%;
+    margin: 0 auto;
+}
+.addthis_toolbox{
+    bottom:50px;
+    top:auto !important;
+}
+.banner{
+    height:380px;
+    background:url(banner.png) #FFA200 no-repeat ;
+    background-size:cover;
+    position:relative;
+     text-align:center;
+     padding-top:40px;
+}
+.banner h1{
+    color:#fff;
+    font-size:50px;
+    margin-bottom:40px;
+}
+.text-center,.form-header{
+    text-align:center;
+}
+.page-description{
+ background:#0696CB;
+ padding:20px;
+ width:calc(100% - 40px);
+  color:#fff;
+    font-size:25px; text-align:center;
+    line-height:35px
+    
+
+}
+
+.banner .text-center{
+        display: inline-block;
+    position: absolute;
+    right: 100px;
+}
+.first-page h3{
+    margin-bottom:20px;
+}
+.first-page li{
+    line-height:20px;
+}
+.first-page a:not(.begin-slider-qa){
+    color:#04A1DB;
+    text-decoration:none;
+}
+.timer{
+   width:170px;
+       padding-bottom: 8px;
+    position:fixed;
+    bottom:50%;
+    right:20px;
+    display:none;
+    
+}
+.timer .process{
+     background:#067df5;
+     position:absolute;
+     width:100%;
+     height:10%;
+     bottom:0;
+}
+.timer .phut,.giay{
+    float:left;
+    width:calc(50% - 22px);
+    padding:10px;
+    background:#FC6D4C;
+    text-align:center;
+    border-left:1px solid #f77455;
+
+}
+.timer .phut{
+border-right:1px solid #f15d3a;
+}
+.timer span{
+    color:#fff;
+    font-size:30px;
+    display:block;
+}
+.timer b{
+    color:#fff;
+    font-size:18px;
+    display:block;
+}

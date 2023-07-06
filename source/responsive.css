@@ -1,0 +1,26 @@
+﻿@charset "utf-8";
+
+@media screen and (max-width: 1000px) {
+
+    .list-main-menu li a {
+        font-size: 20px;
+    }
+    
+    .quick-test-form .list-form-question .form-question .list-answer .answer {
+        margin-bottom: 35px;
+    }
+    
+    .quick-test-form .list-form-question .form-question .list-answer .answer label {
+        padding-left: 75px;           
+    }
+    
+    .quick-test-form .list-form-question .form-question .list-answer .answer label:before {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .quick-test-form .list-form-question .form-question .list-answer {
+        margin-top: 40px;
+    }
+
+}
